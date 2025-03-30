@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1">
+    <test name="VerifyCategories">
+        <parameter name="categoryId" value="6327"/>
+        <classes>
+            <class name="RetrieveCategoriesTest"/>
+        </classes>
+    </test>
+</suite>
