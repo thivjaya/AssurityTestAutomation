@@ -17,7 +17,7 @@ public class RetrieveCategoriesTest extends BaseTest {
      */
     @Test
     @Parameters("categoryId")
-    public void testVerifyCategoryName(String categoryId) {
+    public void testVerifyCategory(String categoryId) {
         Response response = RestAssured.given().log().all().spec(specification).queryParam("catalogue", false)
                 .pathParam("categoryID", categoryId)
                 .when().get(apiGetCategory);
