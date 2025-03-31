@@ -1,6 +1,6 @@
 # Assurity Test Automation
 
-This project include API test for validating Get category function </br>
+This project includes API test designed to validate the "Get category" function . </br>
 
 **Tools Used**</br>
 Java(JDK) 17 </br>
@@ -27,8 +27,7 @@ https://api.tmsandbox.co.nz/
 Maven test execution : **mvn clean test**
 
 ### Notes
-All the dependencies related to the test execution have been added to the pom.xml. </br>
-testng.xml file is added and category ID is passed through the xml. If multiple category ids need to be verified, test can be extended by adding testng data providers</br>
-POJO classes are added to deserialize the response to validate other fields as well if necessary.
-
+All necessary dependencies for test execution are specified in the pom.xml file. </br>
+The testng.xml file is configured to pass the categoryID parameter. To validate multiple category IDs, the test suite can be extended using TestNG data providers.</br>
+POJO classes are included to deserialize the API response, facilitating validation of additional fields as needed.
 
