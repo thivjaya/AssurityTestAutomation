@@ -13,6 +13,7 @@ public class BaseTest {
 
     public RequestSpecification specification;
 
+    /** loading properties from config.properties **/
     private void loadConfig() throws IOException {
         Properties properties = new Properties();
         FileInputStream inputStream = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\config.properties");
@@ -21,6 +22,7 @@ public class BaseTest {
         apiGetCategory = properties.getProperty("api.get.category");
     }
 
+    /** This will run before execution of each test to load properties and set Base url **/
     @BeforeTest
     public void setUp() throws IOException {
         loadConfig();

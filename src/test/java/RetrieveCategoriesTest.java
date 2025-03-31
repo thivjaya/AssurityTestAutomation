@@ -8,6 +8,13 @@ import org.testng.annotations.Test;
 
 public class RetrieveCategoriesTest extends BaseTest {
 
+    /**
+     *
+     * @param categoryId
+     * This test verify the functionality of get category end point.
+     * Category ID is passed through the testng xml
+     * Response is deserialized and mapped to the Category class to easy validation of response fields
+     */
     @Test
     @Parameters("categoryId")
     public void testVerifyCategoryName(String categoryId) {
