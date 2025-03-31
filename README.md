@@ -28,7 +28,7 @@ Maven test execution : **mvn clean test**
 
 ### Notes
 All the dependencies related to the test execution have been added to the pom.xml. </br>
-testng.xml file is added and category ID is passed through the xml.</br>
+testng.xml file is added and category ID is passed through the xml. If multiple category ids need to be verified, test can be extended by adding testng data providers</br>
 POJO classes are added to deserialize the response to validate other fields as well if necessary.
 
 
