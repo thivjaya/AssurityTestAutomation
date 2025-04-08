@@ -1,0 +1,14 @@
+name: on_push
+
+on:
+  push:
+    branches:
+      - "**"
+
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
